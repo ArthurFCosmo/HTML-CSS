@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+
+    <p>
+        Dica: Você pode duplicar o cursor segurando alt + clique para fazer várias modificações iguais ao mesmo tempo.
+    </p>
+
+    <h2>Listas ordenadas</h2>
+
+    <p>
+        Existe uma tag que organiza uma lista por ordem (índice) automaticamente, essa tag é a <mark>ol</mark>, mas todos os itens da lista devem estar envelopados individualmente em um parametro <mark>li</mark>.
+    </p>
+
+    <ol>
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar banho</li>
+        <li>Comer</li>
+        <li>Trocar de roupa</li>
+    </ol>
+
+    <p>
+        Na tag <mark>ol</mark>, pode-se inserir o parâmetro <mark>type="x"</mark>, que muda a formataçao do índce. Pode-se também inserir o parâmetro <mark>start="x"</mark>, que indica em qual número vai começar a lista.
+    </p>
+
+    <ol type="i" start="4">
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar banho</li>
+        <li>Comer</li>
+        <li>Trocar de roupa</li>
+    </ol>
+
+    <h2>Listas não-ordenadas</h2>
+
+    <p>
+        São listas em que a ordem não importa, sendo representadas pela tag <mark>ul</mark>, que vem de unordered list. Todos os itens da lista devem estar envelopados individualmente em um parametro <mark>li</mark>.
+    </p>
+
+    <ul>
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Ovos</li>
+        <li>Açúcar</li>
+    </ul>
+
+    <p>
+        Na tag <mark>ul</mark>, pode-se inserir o parâmetro <mark>type="x"</mark>, que muda a formataçao do índce, podendo ser: <mark>disk (padrão), circle, square</mark>.
+    </p>
+
+    <ul type="circle">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Ovos</li>
+        <li>Açúcar</li>
+    </ul>
+
+    <h2>Listas mistas</h2>
+    <p>
+        Você pode colocar uma lista dentro da outra, basta usar a endentação (pode mesclar <mark>ol</mark> com <mark>ul</mark>)
+    </p>
+
+    <ol>
+        <li>Gastos fixos</li>
+        <ol type="a">
+            <li>Água</li>
+            <li>Luz</li>
+            <li>Gás</li>
+            <li>Comida</li>
+        </ol>
+        <li>Gastos variáveis</li>
+        <ol type="a" start="5">
+            <li>Roles</li>
+            <li>Lanches</li>
+            <li>Roupas</li>
+        </ol>
+    </ol>
+
+    <h2>Listas de definição</h2>
+
+    <p>
+        Você pode criar uma lista de definição que funciona como um dicionario através da tag <mark>dl</mark>, e dentro dela existe a tag <mark>dt</mark>, que você insere a palavra, e a tag <mark>dd</mark>, que você insere o significado.
+    </p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>
+            Linguagem de marcação para a criação de conteúdo de um site.
+        </dd>
+        <dt>CSS</dt>
+        <dd>
+            Linguagem de maracação para a criação do design de um site.
+        </dd>
+    </dl>
+</body>
+</html>

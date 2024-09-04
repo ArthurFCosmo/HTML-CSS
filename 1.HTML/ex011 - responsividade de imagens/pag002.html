@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproduzindo áudios</title>
+</head>
+<body>
+    <h1>Reproduzindo áudios</h1>
+
+    <p>Para voltar para a página anterior, clique <a href="index.html" rel="prev" target="_self">aqui</a>.</p>
+
+    <h2>Arquivo</h2>
+
+    <p>
+        Deve ser um arquivo <mark>.mp3, WAV ou OGG</mark> de preferência. Não deve ser nomeado com espaços, letras maíusculas ou acentuação.
+    </p>
+
+    <h2>Tags</h2>
+
+    <p>
+        Você pode utilizar a seguinte tag:
+    </p>
+
+    <p>
+        <code>
+            &lt;audio src="CAMINHO DO ARQUIVO DE AUDIO"&gt;&lt;/audio&gt;
+        </code>
+    </p>
+
+    <p>
+        Utilizando os parametros <mark>autoplay</mark>, para tocar automaticamente ou <mark>controls</mark>, para exibir o controlador de audio no seu site. Ficando assim:
+    </p>
+
+    <p>
+        <code>
+            &lt;audio src="CAMINHO DO ARQUIVO DE AUDIO" autoplay controls&gt;&lt;/audio&gt;
+        </code>
+    </p>
+
+    <p>
+        Porém utilizar essa tag dessa maneira tem um <strong><mark>alto risco de incompatiblidade!</mark></strong>
+    </p>
+    <audio src="midia/problemas-de-um-milionario-instrumental.mp3" controls></audio>
+
+    <h2>Correção:</h2>
+
+    <p>
+        Você insere a tag <mark>audio</mark> e remove o parametro <mark>src="#"</mark> que já vem como padrão. No lugar você insere manualmente a tag <mark>source:src</mark>, ficando dessa forma:
+    </p>
+
+    <p>
+        <pre>
+&lt;audio&gt;
+    &lt;source src="CAMINHO DO ARQUIVO" type="descubra o mediatype no site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="nofollow">iana</a>"&gt;
+&lt;/audio&gt;
+        </pre>
+    </p>
+
+    <p>
+        Você também pode inserir a tag  <mark>P</mark> após os sources, então ela exibirá uma mensagem caso não consiga ler os arquivos de áudio.
+    </p>
+
+    <p>
+        <small>A tag <mark>P</mark> não aparece, pois ela só será lida se o navegador NÃO TIVER NENHUM suporte à tag <áudio >. Ou seja, se o navegador não ler MP3, OGG ou outro qualquer, mas ler algum tipo de formato de áudio , então o resultado será o controle de áudio inativo (porque ele lê áudio, só não o formato passado), porém sem mostrar a mensagem do parágrafo com seu link para download. Para que o texto com link para download seja mostrado, o navegador não deve ter nenhum suporte a áudio, ou seja, não tem navegadores hoje sem esse suporte, todos tocam áudio, logo, a tag <mark>P</mark> nunca aparecerá.</small>
+    </p>
+    <p>Media types:</p>
+    <ul>
+            <li><mark>audio/mpeg</mark></li>
+            <li><mark>audio/ogg</mark></li>
+            <li><mark>audio/wav</mark></li>
+    </ul>
+
+    <p>
+        Evite usar os arquivos <mark>.wav</mark>, pos são muito grandes.
+    </p>
+
+    <p>
+        Dentro da tag audio você pode inserior vários <mark>source:src</mark>, eles serão lidos na ordem em que os sources aparecem no código, e a leitura só continuará se não tiver conseguido ler o áudio atual, como uma espécie de busca.
+    </p>
+
+    <p>
+        Na tag <mark>audio</mark>, também existe o parametro <mark>preload="#"</mark>, que recebe 3 valores: <mark>auto, metadata, none</mark>. O <mark>auto</mark>, só vai constar que o site terminou de carregar quando ele tiver carregado completamente o arquivo de audio, o que pode prejudicar a performance. O <mark>metadata</mark> só vai constar que o site está carregado quando ele carregar alguns dados essenciais do arquivo, como duração, tamanho, data, etc. E o <mark>none</mark> não vai esperar por nada.
+    </p>
+    <p>
+        Existe também o parametro <mark>loop</mark>, que irá reiniciar o áudio assim que ele terminar.
+    </p>
+
+    <p>
+        <pre>
+&lt;audio preload="auto" autoplay controls loop&gt;
+    &lt;source src="midia/problemas-de-um-milionario-instrumentmp3" type="audio/mpeg"&gt;
+    &lt;source src="midia/problemas-de-um-milionario-instrumentmp3" type="audio/ogg"&gt;
+    &lt;source src="midia/problemas-de-um-milionario-instrumentmp3" type="audio/wav"&gt;
+&lt;/audio&gt;
+        </pre>
+    </p>
+
+    <audio preload="auto" autoplay controls loop>
+        <source src="midia/problemas-de-um-milionario-instrumental.mp3" type="audio/mpeg">
+        <source src="midia/problemas-de-um-milionario-instrumental.mp3" type="audio/ogg">
+        <source src="midia/problemas-de-um-milionario-instrumental.mp3" type="audio/wav">
+    </audio>
+</body>
+</html>

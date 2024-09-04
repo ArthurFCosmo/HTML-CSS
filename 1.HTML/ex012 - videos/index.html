@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colocando videos</title>
+</head>
+<body>
+    <h1>Inserindos vídeos hospedados localmente</h1>
+
+    <h2>Maneira simples</h2>
+
+    <p>Esse vídeo está hospedado no meu próprio servidor (pasta).</p>
+
+    <p>Foi utilizada a tag <mark>video</mark>, que funciona de maneira muito semelhante a tag <mark>audio</mark>.</p>
+
+    <p>
+        <code>
+            &lt;video src="<mark>CAMINHO DO VÍDEO</mark>" autoplay muted controls&gt;&lt;/video&gt;
+        </code>
+    </p>
+
+    <video src="media/video-nengue.mp4" height="450px" autoplay muted controls></video>
+
+    <h2>Parâmetros</h2>
+
+    <ul>
+        <li>autoplay - Reproduz o vídeo automaticamente ao abrir a página (Está indisponível na maioria dos navegadores, mas FUNCIONA caso o parâmetro MUTE esteja ativado).</li>
+        <li>mute - Retira o som do vídeo quando ele é iniciado.</li>
+        <li>controls - Mostra os controles (play, volume, tela cheia, etc.).</li>
+        <li>poster - Permite upload de uma thumb (capa).</li>
+        <li>height - Configura o espaço que o vídeo ocupa na página (altura).</li>
+        <li>width - Configura o espaço que o vídeo ocupa na pagina (largura)</li>
+    </ul>
+
+    <h2>Maneira correta</h2>
+
+    <p>
+        Para se inserir da maneira correta, deve-se utilizar a tag video, apagar o <mark>src="#"</mark> original, e inserir dentro da tag <mark>video</mark> a tag <mark>source:src</mark>, que pode ser adicionada várias vezes para adicionar vários formatos do mesmo vídeo, maximizando a compatibilidade. Ficando assim:
+    </p>
+
+    <p>
+        <pre>
+&lt;video height="<mark>ALTURA PERSONALIZAVEL</mark>" controls poster="<mark>THUMB PERSONALIZAVEL</mark>"&gt;
+    &lt;source src="media/video-naum.mp4 (<mark>local do arquivo</mark>)" type="<mark>descubra</mark> o mediatype no site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="nofollow">iana</a>"&gt;
+    &lt;source src="media/video-naum.ogv (<mark>local do arquivo</mark>)" type="<mark>descubra</mark> o mediatype no site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="nofollow">iana</a>"&gt;
+    &lt;p&gt;Seu navegador não tem compatibilidade com reprodução vídeos (<mark>mensagem caso nenhum arquivo consiga ser lido</mark>)&lt;/p&gt;
+&lt;/video&gt;
+        </pre>
+    </p>
+
+    <video controls height="450px" poster="imagens/F2-tRGtXkAAhQmd.jpg">
+        <source src="media/video-naum.mp4" type="video/mp4">
+        <source src="media/video-naum.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <p>
+        Para ir para a segunda pág, clique <a href="pag002.html" rel="next" target="_self">aqui</a>.
+    </p>
+    
+</body>
+</html>

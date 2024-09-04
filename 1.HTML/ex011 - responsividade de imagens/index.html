@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+
+    <p>
+        Imagens dinâmicas são imagens que se adaptam ao formato da tela do usuário, elas são importantíssimas para uma boa experiência ao acessar seu site.
+    </p>
+
+    <p>
+        Aqui vai um exemplo de imagem dinâmica, ela se adapta em diferentes dispositivos, ou se o usuário muda o tamanho da janela.
+    </p>
+
+    <h2>Logo após a imagem, leia sobre a tag <mark>picture</mark></h2>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-media.png" type="image/png">
+        <img src="imagens/imagem-grande.png" alt="imagem flexivel">
+    </picture>
+
+    <h2>
+        Para fazer essa adaptação, foi preciso criar 3 imagens com tamanhos diferentes.<br>
+        (Todas com 80 px/pol ou px/in de resolução)
+    </h2>
+
+    <ol>
+        <li>Uma pequena com 300 px</li>
+        <li>Uma média com 700 px</li>
+        <li>Uma grande com 1000px</li>
+    </ol>
+
+    <h2>Tag <mark>picture</mark></h2>
+    <p>
+        Para criar uma imagem que se adapta automaticamente a tela, é necessário usar a tag <mark>picture</mark>. Dentro dela é necessário colocar a tag <mark>img</mark>,ou seja,<br> envelopar a tag <mark>img</mark> dentro da tag <mark>picture</mark> ficando assim:
+
+        <pre>
+&lt;picture&gt;
+    &lt;img src="imagem" alt="texto-alternativo"&gt;
+&lt;/picture&gt;
+        </pre>
+    </p>
+
+    <p>
+        Logo após isso, deve-se inserir dentro do envolpe <mark>picture</mark>, a tag <mark>source:media:type</mark>, que irá conter a largura máxima, o tipo da imagem, e o endereço da imagem que vai se adaptar. Ficando assim:
+
+        <pre>
+&lt;picture&gt;
+    &lt;source media="(max-width: <mark>TAMANHO EM MÁXIMO EM PIXELS PARA ACONTECER A ADAPTAÇÃO DA IMAGEM</mark>)" srcset="<mark>ENDEREÇO DA IMAGEM</mark>" type="image/<mark>TIPO DA IMAGEM</mark>"&gt;        
+    &lt;img src="imagem" alt="texto-alternativo"&gt;
+&lt;/picture&gt;
+        </pre>
+    </p>
+
+    <p>Detalhes:</p>
+
+    <ul type="disk">
+        <li>A imagem padrão na tag <mark>img</mark> tem que vir ABAIXO no código, e acima dele devem ser inseridos as imagens alternativas na tag <mark>source</mark>, do menor para o maior.</li>
+        <li>O tamanho máximo em pixels deve conter um espaço no início, e finalizar em "px", sem espaço entre os números e o "px": <mark>media="(max-width: 750px)"</mark></li>
+        <li>O nome do arquivo de imagem não pode conter espaços, acentuação, ou letras maíusculas e deve conter o formato do arquivo no final com ".": <mark>srcset="imagens/imagem-pequena.png"</mark></li>
+        <li>O tipo do arquivo nao deve conter ".": <mark>type="image/png"</mark></li>
+    </ul>
+
+    <h1>Página 2 (Áudios)</h1>
+    
+    <p>Clique <a href="pag002.html" target="_self">aqui</a> para ir para a página de introdução de áudios.</p>
+</body>
+</html>

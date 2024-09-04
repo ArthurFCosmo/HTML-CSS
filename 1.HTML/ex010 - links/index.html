@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+
+    <p>
+        Um link externo é link que vai apontar para outro site (que não é meu)
+    </p>
+
+    <p>
+        Para criar um link usa-se a tag <mark>a</mark> (anchor/âncora), e nela existe o parametro obrigatório <mark>href="#"</mark>, onde deve ser inserido o link.
+    </p>
+
+    <p>
+        Você pode acessar <a href="https://www.youtube.com/@gordokun614">meu canal do youtube</a>
+    </p>
+
+    <h2>Abrindo em uma nova aba</h2>
+
+    <p>
+        Pode-se observar que ao clicar no link anterior, a página original foi sobrepujada. Para abrir o link em uma nova aba automaticamente, usa-se o parametro da tag <mark>a</mark>:<br><mark>target="_blank"</mark>, e o parametro <mark>rel="external"</mark>, quando <mark>rel</mark> (relativo a) recebe o valor <mark>"external"</mark>, indica ao mecanismo que aquele link se refere a uma página externa.
+    </p>
+
+    <p>
+        Você pode acessar <a href="https://www.youtube.com/@gordokun614" target="_blank" rel="external">meu canal do youtube</a>
+    </p>
+
+    <p>
+        Para abrir o conteúdo na própria página, basta não declarar <mark>target="#"</mark>, ou declarar <mark>target="_self"</mark>.
+    </p>
+
+    <h1>Nofollow</h1>
+
+    <p>
+        Quando você quer inserir um link no seu site, mas não se responsabiliza pela gerência daquele site, ou não da uma aval para aquele conteúdo. Você deve usar o parâmetro <mark>rel="nofollow"</mark>, e existe o parâmetro <mark>rel="dofollow"</mark>, que serve para indicar justamente o contrário.
+    </p>
+
+    <p>
+        Link com nofollow: <a href="https://youtube.com" target="_blank" rel="nofollow">Clique aqui</a>
+    </p>
+
+    <p>
+        Isso serve para informar ao mecanismo de busca, e não para o usuário.
+    </p>
+
+    <h1>Links para download</h1>
+
+    <p>
+        Para criar um link para download, você deve usar a tag <mark>a</mark>, com o parâmetro <mark>href="#"</mark> indicando o arquivo normalmente, porém deve adicionar o parâmetro <mark>download="#"</mark>, com o nome do arquivo, e o parâmetro <mark>type="#"</mark>, esse parâmetro tem um valor que depende do tipo de arquivo que você está tentando disponibilizar para download. Para descobrir esse valor acesse <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" rel="nofollow" target="_blank">www.iana.org</a>.
+    </p>
+
+    <ul>
+        <li>
+            <a href="livro/Currículo (Arthur Cosmo).pdf" download="Currículo" type="application/pdf">Currículo em pdf</a>
+        </li>
+        <li>
+            <a href="livro/Currículo (Arthur Cosmo).zip" download="Currículo (Arthur Cosmo).zip" type="application/zip">Currículo zipado</a>
+        </li>
+    </ul>
+
+    <h1>Usando links internos</h1>
+
+    <p>Clique <a href="pag002.html">aqui</a> para acessar a página 2</p>
+
+</body>
+</html>
