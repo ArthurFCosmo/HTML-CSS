@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Modelos de caixa</h1>
+
+        <h2>Propriedades principais</h2>
+
+        <p>Todos os elementos no html são exibidos em caixas, que possuem largura e altura (h1, h2, p, img, etc.).</p>
+
+        <p>Além da largura e da altura existem outras propriedades em TODOS os elementos:</p>
+
+        <img src="media/propriedades-caixa.png" alt="propriedades-caixa">
+
+        <ul>
+            <li>width = largura</li>
+            <li>height = altura</li>
+            <li>padding = a distância entre o conteúdo e a borda</li>
+            <li>border = borda que circunda o texto</li>
+            <li>margin = a distância entre o elemento e elementos externos/fim da página</li>
+            <li>outline = um traçado que fica fora do elemento, logo após a borda</li>
+        </ul>
+
+        <h2>Tipos de caixa</h2>
+
+        <p><span class="bold">Box level:</span> o box level é um tipo de caixa que ocupa sempre a linha inteira. Sempre se iniciará um novo parágrafo (pular linha) antes e depois da caixa.</p>
+
+        <p><span class="bold">Inline level:</span> as caixas inline não ocupam a linha inteira, o conteúdo para, a caixa é inserida ocupando apenas o espaço do seu conteúdo, e na mesma linha, se dá continuidade ao conteúdo.</p>
+
+        <img class="imagem-reduzida" src="media/tipos-de-caixa.png" alt="tipos-de-caixa">
+
+        <h1>Devtools</h1>
+
+        <p>O <span class="bold">Devtools</span> é uma ferramenta presente no google chrome, que permite que você visualize as confugrações HTML e CSS da página. Para acessar essa ferramenta, utilize o comando <mark>ctrl + shift + i</mark>.</p>
+
+        <img class="imagem-reduzida" src="media/print-devtools-1.png" alt="print-devtools-1">
+
+        <p>Nele você pode editar configurações de estilo, que alterarão a visualização da página, mas não interferindo no documento CSS original. O que é ideal para testes.</p>
+
+        <h1>Estilos nas caixas</h1>
+
+        <h2>Sombras</h2>
+
+        <p>Para se utilizar sombras, utiliza-se o estilo <mark>box-shadow</mark>, que recebe respecitvamente cinco valores separados por espaços em sua shorthand: <mark>Posição (inset - outset)</mark> <mark>deslocamento horizontal</mark> <mark>deslocamento vertical</mark> <mark>espalhamento</mark> <mark>cor da sombra</mark>.</p>
+
+        <p>Uma dica valiosa para personalizar a sombra é utilizar o dev-tools, nele você pode utilizar o scrool do mouse para modificaro os valores da sombra, ou utilizar uma janela personalizada para criar sombras:</p>
+
+        <img src="media/box-shadow-devtools.png" alt="box-shadow-devtools">
+
+        <p>Procure usar transparência nas sombras.</p>
+
+        <h2>Cantos arredondados</h2>
+
+        <p>Para arredondar os cantos de uma caixa, utiliza-se o estilo <mark>border-radius</mark>, que recebe 4 parâmetros, cada um referente a um dos 4 cantos da caixa, apresentando valores em px.</p>
+
+        <p>Comumumente usa-se o shorthand desse estilo, porém ele pode ser dividido em 4.</p>
+        <ul>
+            <li>border-top-left-radius: ;</li>
+            <li>border-top-right-radius: ;</li>
+            <li>border-bottom-left-radius: ;</li>
+            <li>border-bottom-right-radius: ;</li>
+        </ul>
+    </main>
+</body>
+</html>
