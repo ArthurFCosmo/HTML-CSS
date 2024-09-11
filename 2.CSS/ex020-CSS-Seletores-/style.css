@@ -20,6 +20,11 @@ main {
     color: white;
 }
 
+mark {
+    background-color: #efdfff;
+    color: black;
+}
+
 h1 {
     font-family: serif;
     font-size: 2em;
@@ -29,9 +34,16 @@ h1 {
 }
 
 h2 {
-    font-family: serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.7em;
-    text-decoration: underline;
+    font-weight: lighter;
+    text-decoration: none;
+
+    background-color: white;
+    color: #1f1f1f;
+
+    width: fit-content;
+    padding: 7px;
 }
 
 .texto-com-fundo {
