@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(media/dark-triangles-abstract-pattern.jpg);
+}
+
+main {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 800px;
+    padding: 30px;
+    background-color: #333237;
+    color: white;
+}
+
+ul {
+    background-color: #29282c;
+    width: fit-content;
+    padding: 1em 2em;
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    padding: 5px;
+}
+
+h2 {
+    background-color: #29282c;
+    width: fit-content;
+    padding: 5px;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.imagem-100 {
+    width: 100%;
+}
