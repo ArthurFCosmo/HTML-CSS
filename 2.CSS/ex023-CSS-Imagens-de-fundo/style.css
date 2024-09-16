@@ -79,3 +79,38 @@ mark {
     background-image: url(media/guanabara/pattern001.png);
     margin-bottom: 10px;
 }
+
+#exdiv4 {
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid white;
+    background-image: url(media/guanabara/pattern001.png);
+    background-size: 80px 80px;
+    margin-bottom: 10px;
+}
+
+#exdiv5 {
+    height: 500px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid white;
+    background-image: url(media/guanabara/pattern001.png);
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+#exdiv6 {
+    height: 500px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid white;
+    background-image: url(media/guanabara/pattern001.png);
+    background-size: 80px 80px;
+    background-repeat: repeat-x;
+    margin-bottom: 10px;
+}
