@@ -22,26 +22,32 @@ ul {
 }
 
 h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    background-color: black;
+    background-color: rgb(170, 170, 170);
+    color: black;
     padding: 5px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 h2 {
-    background-color: #29282c;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #1b1a1d;
     width: fit-content;
     padding: 5px;
 }
 
 p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 mark {
     font-weight: bolder;
     background-color: rgb(255, 255, 255);
-    padding: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
     border-radius: 2px;
     color: black;
 }
@@ -112,5 +118,26 @@ mark {
     background-image: url(media/guanabara/pattern001.png);
     background-size: 80px 80px;
     background-repeat: repeat-x;
+    margin-bottom: 10px;
+}
+
+#exdiv7 {
+    height: 500px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid white;
+    background-image: url(media/guanabara/wallpaper003.jpg);
+    margin-bottom: 10px;
+}
+
+#exdiv8 {
+    height: 500px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid white;
+    background-image: url(media/guanabara/wallpaper003.jpg);
+    background-position: bottom right;
     margin-bottom: 10px;
 }
