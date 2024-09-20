@@ -54,6 +54,7 @@ mark {
 
 .imagem-100 {
     width: 100%;
+    border: 3px solid rgb(170, 170, 170);
 }
 
 #exdiv1 {
@@ -140,4 +141,13 @@ mark {
     background-image: url(media/guanabara/wallpaper003.jpg);
     background-position: bottom right;
     margin-bottom: 10px;
+}
+
+#exdiv9 {
+    height: 27vh;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid white;
+    background: black url(media/dark-triangles-abstract-pattern.jpg) repeat fixed center center/cover;
 }
