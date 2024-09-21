@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Position</h1>
+
+        <h2>O que é</h2>
+
+        <p>Position é um estilo CSS que configura a posição de um elemento em relação a outro.</p>
+
+        <h2>Position: static;</h2>
+
+        <p>O estilo padrão é o static.</p>
+        <p>Os elementos posicionados com essa configuração não são afetados pelas propriedades top, bottom, left, right.</p>
+        <p>É posicionado comumente, sem nenhuma propriedade especial. Sempre é posicionado seguindo o fluxo da página.</p>
+
+        <h2>Position: relative;</h2>
+
+        <p>O estilo relative pode receber várias configurações, como top, bottom, left, right.Todas essas configurações tem como base a posição normal que o item teria na página.</p>
+        <p>Se o elemento for mudado de lugar, nenhum outro elemento se moverá para preencher o espaço deixado por ele. É como se ele ainda estivesse ali.</p>
+
+        <h2>Position: fixed;</h2>
+
+        <p>Quando o estilo fixed está ativo, o objeto se alinhará a viewport, mantendo sua posição independente do scroll. Usa-se top, bottom, right, left.</p>
+        <p>Os elementos fixed não deixarão espaço na página onde eles estariam posicionado normalmente.</p>
+
+        <h2>Position: sticky;</h2>
+
+        <p>Um elemento com position: sticky é posicionado com base no scroll do usuario. Ele altera suas propriedades entre position: relative; e position: fixed; de acordo com o scroll.</p>
+        <p>Ele tem propriedades de position: relative; até que uma posição predefinida é encontrada na viewport, então o elemento "gruda" no lugar, como se tivesse a propriedade position: fixed;</p>
+        <p>Você tem que especificar pelo menos uma posição top, bottom, left, right; para a função sticky funcionar.</p>
+
+        <div id="div-sticky">
+            <p>Segure o clique aqui para ocultar<br>
+               Scroll down para mover 
+            </p>
+        </div>
+
+        <h2>Position: absolute;</h2>
+
+        <p>Quando um elemento está com position absolute, ele é posicionado com base no elemento pai mais próximo, ao invés de tomar como base a viewport. Se ele não tiver elemento pai, ele se baseará no body.</p>
+        <p>Se move de acordo com o scroll, ficando em um lugar fixo na página.</p>
+        <p>É removido do fluxo normal da página, e pode sobrepor outros elementos.</p>
+    </main>
+</body>
+</html>
