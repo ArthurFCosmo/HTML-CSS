@@ -67,6 +67,7 @@ div#div-sticky {
 
     position: sticky;
     top: 0;
+    transition-duration: 0.25s;
 }
 
 div#div-sticky:hover {
