@@ -34,7 +34,6 @@ header > p > a {
 }
 
 header > p > a:hover {
-    color: aliceblue;
     text-decoration: underline;
     font-weight: bolder;
 }
@@ -45,7 +44,6 @@ header > a {
 }
 
 header > a:hover {
-    color: aliceblue;
     text-decoration: underline;
     font-weight: bolder;
 }
@@ -112,8 +110,6 @@ footer > p > a {
 }
 
 footer > p > a:hover {
-    color: aliceblue;
     text-decoration: underline;
     font-weight: bolder;
-    font-family: sans-serif;
 }
