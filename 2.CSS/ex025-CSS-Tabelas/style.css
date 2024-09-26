@@ -1,7 +1,6 @@
 body {
     background-image: url(media/dark-triangles-abstract-pattern.jpg);
     margin: 20px;
-    padding-bottom: 1000px;
 }
 
 main {
@@ -9,7 +8,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
-    padding: 2.5vw;
+    padding: 30px;
     background-color: #333237;
     color: white;
 }
@@ -33,10 +32,10 @@ h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #1b1a1d;
     width: fit-content;
-    padding: 5px;
+    padding: 10px;
 }
 
-p {
+p, li {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: justify;
     font-size: 1em;
@@ -49,6 +48,10 @@ mark {
     padding-right: 2px;
     border-radius: 2px;
     color: black;
+}
+
+.imagem-100 {
+    width: 100%;
 }
 
 #tabela0 {

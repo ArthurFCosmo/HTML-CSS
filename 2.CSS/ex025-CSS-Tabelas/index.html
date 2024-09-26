@@ -11,7 +11,9 @@
         <h1>Tabelas em HTML5</h1>
 
         <h2>Tags</h2>
-        <p>Para criar tabelas em HTML usa-se a tag <mark>table</mark>, dentro dela você irá inserir linhas (table row) com a tag <mark>tr</mark>, e nessas linhas, você irá inserir dados (table data) com a tag <mark>td</mark>. O fechamento dessas tags é opcional, mas o vscode já fecha automatciamente as tags.</p>
+        <p>Para criar tabelas em HTML usa-se a tag <mark>table</mark>.</p>
+        <p>Dentro dela você irá inserir linhas (table row) com a tag <mark>tr</mark>.</p>
+        <p>Nessas linhas, você irá inserir dados (table data) com a tag <mark>td</mark>. O fechamento dessas tags é opcional, mas o vscode já fecha automatciamente as tags.</p>
 
         <p>Ex:</p>
         <img src="media/amostra-codigo-1.png" alt="amostra-de-codigo">
@@ -36,7 +38,52 @@
             </tr>
         </table>
 
+        <h2>Head, body e foot</h2>
+
+        <p>Podemos adicionar cabeçalho e rodapé também, com as seguintes tags:</p>
+
+        <ul>
+            <li>thead (onde vai o cabeçalho, usando a tag <mark>th</mark> para preencher)</li>
+            <li>tbody (onde vão as informações, usando a tag <mark>td</mark> para preencher)</li>
+            <li>tfoot (onde vai o rodapé, usando a tag <mark>tf</mark> para preencher)</li>
+        </ul>
+
+        <p>Ex:</p>
+
+        <img src="media/amostra-codigo-2.png" alt="amostra-de-codigo">
+
+        <p>Resultando em:</p>
+
+        <table>
+            <thead>
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+                <th>Coluna 3</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A1</td>
+                    <td>B1</td>
+                    <td>C1</td>
+                </tr>
+                <tr>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+                <tr>
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Estilo</h2>
+
         <p>Podemos adicionar <mark>estilo</mark> nas tabelas.</p>
+
+        <img class="imagem-100" src="media/amostra-codigo-3.png" alt="amostra-de-codigo">
 
         <p>Resultando em:</p>
 
@@ -60,8 +107,8 @@
 
         <h2>Alinhamento vertical e horizontal</h2>
         <ul>
-            <li><mark>text-align:</mark> left, center, right</li>
-            <li><mark>vertical-align:</mark> top, middle, bottom</li>
+            <li>text-align: left, center, right</li>
+            <li>vertical-align: top, middle, bottom</li>
         </ul>
     </main>
 </body>
