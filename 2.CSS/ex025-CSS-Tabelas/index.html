@@ -40,9 +40,11 @@
 
         <h2>Head, body e foot</h2>
 
-        <p>Podemos adicionar cabeçalho e rodapé também, com as seguintes tags:</p>
+        <p>Podemos adicionar titúlo, cabeçalho e rodapé também, com as seguintes tags:</p>
 
         <ul>
+            <li>caption é o título da tabela, onde você inserirá apenas texto, sem outras tags dentro.</li>
+            <br>
             <li>thead (onde vai o cabeçalho, usando a tag <mark>th</mark> para preencher, que colocará em letras maiúsculas por padrão)</li>
             <br>
             <li>tbody (onde vão as informações, usando a tag <mark>td</mark> para preencher, com letras minúsculas por padrão)</li>
@@ -81,10 +83,21 @@
             </tbody>
         </table>
 
+        <h2>Scope</h2>
+
+        <p>Você deve informar ao HTML da página qual o tipo de título ao usar a tag <mark>th</mark>, por exemplo, existem títulos que descrevem dados que vem abaixo dele, mas existem títulos que descrevem dados que vem na mesma linha.</p>
+
+        <p>Neste exemplo, os dados virão abaixo do título, então se usa a tag <mark>scope: col;</mark></p>
+        <img class="imagem-100" src="media/amostra-codigo-4.png" alt="amostra-de-tabela">
+
+        <p>Já neste outro exemplo, usa-se <mark>scope: row;</mark> Pois os dados referentes ao título estão na mesma linha.</p>
+        <img src="media/amostra-codigo-5.png" alt="amostra-de-tabela">
+
         <h2>Estilo</h2>
 
         <p>Podemos adicionar <mark>estilo</mark> nas tabelas.</p>
 
+        <p>Ex:</p>
         <img class="imagem-100" src="media/amostra-codigo-3.png" alt="amostra-de-codigo">
 
         <p>Resultando em:</p>
