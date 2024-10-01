@@ -88,7 +88,7 @@
         <p>Você deve informar ao HTML da página qual o tipo de título ao usar a tag <mark>th</mark>, por exemplo, existem títulos que descrevem dados que vem abaixo dele, mas existem títulos que descrevem dados que vem na mesma linha.</p>
 
         <p>Neste exemplo, os dados virão abaixo do título, então se usa a tag <mark>scope: col;</mark></p>
-        <img class="imagem-100" src="media/amostra-codigo-4.png" alt="amostra-de-tabela">
+        <img class="imagem-50" src="media/amostra-codigo-4.png" alt="amostra-de-tabela">
 
         <p>Já neste outro exemplo, usa-se <mark>scope: row;</mark> Pois os dados referentes ao título estão na mesma linha.</p>
         <img src="media/amostra-codigo-5.png" alt="amostra-de-tabela">
@@ -119,6 +119,48 @@
                 <td>C3</td>
             </tr>
         </table>
+
+        <h2>Tabela Zebrada</h2>
+
+        <p>Exemplo de tabela zebrada:</p>
+
+        <table id="tabela2">
+            <tbody>
+                <tr>
+                    <td>A1</td>
+                    <td>B1</td>
+                    <td>C1</td>
+                </tr>
+                <tr>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+                <tr>
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                </tr>
+                <tr>
+                    <td>A4</td>
+                    <td>B4</td>
+                    <td>C4</td>
+                </tr>
+                <tr>
+                    <td>A5</td>
+                    <td>B5</td>
+                    <td>C5</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Para dar o efeito de tabela zebrada usamos a seguinte configuração de estilo:</p>
+
+        <img class="imagem-50" src="media/amostra-codigo-6.png" alt="amostra-codigo-6">
+
+        <p>Com esse seletor <mark>:nth-child(n)</mark> conseguimos escolher de quantos em quantos intevalos certa configuração vai existir, por exemplo, se n=2, ele vai acontecer a cada duas casas.</p>
+
+        <P>Você pode usar <mark>n=odd</mark> para configurar apenas as linhas ímpares, ou <mark>n=even</mark>, que é par.</P>
 
         <h2>Alinhamento vertical e horizontal</h2>
         <ul>
