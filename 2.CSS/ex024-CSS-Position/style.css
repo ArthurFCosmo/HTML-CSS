@@ -3,7 +3,6 @@
 body {
     background-image: url(media/dark-triangles-abstract-pattern.jpg);
     margin: 20px;
-    padding-bottom: 1000px;
 }
 
 main {
@@ -56,6 +55,10 @@ mark {
 .imagem-100 {
     width: 100%;
     border: 3px solid rgb(170, 170, 170);
+}
+
+#margin-sticky {
+    margin-top: 500px;
 }
 
 div#div-sticky {
