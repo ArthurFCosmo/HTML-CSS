@@ -93,6 +93,34 @@
         <p>Já neste outro exemplo, usa-se <mark>scope: row;</mark> Pois os dados referentes ao título estão na mesma linha.</p>
         <img src="media/amostra-codigo-5.png" alt="amostra-de-tabela">
 
+        <p>Quando uma célula é mesclada, existe o scope em grupos de célula, <mark>group</mark>, que indica que o título serve para mais de uma coluna ou linha. Ex:</p>
+
+        <img class="imagem-50" src="media/amostra-codigo-13.png" alt="amostra-de-tabela">
+
+        <p>Que seria escrito assim:</p>
+
+        <img class="imagem-100" src="media/amostra-codigo-14.png" alt="amostra-de-codigo">
+
+        <p>Gerando a seguinte tabela:</p>
+
+        <table>
+            <thead>
+                <th scope="colgroup" colspan="2">Notas</th>
+            </thead>
+            <thead>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </thead>
+            <tr>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+        </table>
+
         <h2>Mesclagem de células</h2>
 
         <p>Você pode fazer uma configuração HTML para que uma célula ocupe mais de uma linha ou mais de uma coluna. Tornando ela uma célula mesclada.</p>
