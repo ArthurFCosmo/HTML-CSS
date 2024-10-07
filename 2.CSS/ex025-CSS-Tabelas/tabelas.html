@@ -162,6 +162,16 @@
             </tr>
         </table>
 
+        <h2>Estilos por grupo</h2>
+
+        <p>Caso uma tabela tenha muitas células, precisariamos adicionar estilo em cada uma delas. Mas com a tag <mark>group</mark>, podemos adicionar estilo a todas de uma vez. Ex:</p>
+
+        <img class="imagem-50" src="media/amostra-codigo-17.png" alt="amostra-de-codigo">
+
+        <p>Dentro da tag <mark>colgroup</mark>, existe a tag <mark>col</mark>, que corresponde a cada coluna da tabela. Para selecionar várias colunas, basta colocar o <mark>span</mark>. Depois, adicionar uma classe para usar estilos.</p>
+
+        <img class="imagem-50" src="media/amostra-codigo-18.png" alt="amostra-de-codigo">
+
         <h2>Tabela Zebrada</h2>
 
         <p>Exemplo de tabela zebrada:</p>
@@ -210,6 +220,18 @@
             <br>
             <li>vertical-align: top, middle, bottom</li>
         </ul>
+
+        <h2>Responsividade</h2>
+
+        <p>Para evitar rolagem lateral nas tabelas quando exibidas em dispositivos móveis, deve-se fazer o seguinte procedimento:</p>
+
+        <ul>
+            <li>Envelopar a tabela numa tag <mark>div</mark>.</li>
+            <li>Criar um estilo para essa div.</li>
+            <li>No estilo, deve-se usar a configuração <mark>overflow-x: auto;</mark>, que criará uma barra de rolagem APENAS PARA A TABELA, mantendo a posiçao do resto dos itens na página.</li>
+        </ul>
+
+        <img src="media/amostra-codigo-19.png" alt="amostra-de-codigo">
 
         <h2 id="botao-pag"><a rel="next" href="desafio-tabela-1.html">Clique para prosseguir e acessar o desafio</a></h2>
     </main>
