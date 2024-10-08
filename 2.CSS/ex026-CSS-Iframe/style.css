@@ -1,12 +1,19 @@
 @charset "UTF-8";
 
+:root {
+    --roxo-claro:#6e4973;
+    --roxo-medio:#603465;
+    --roxo-escuro:#532259;
+    --cinza-medio:#b1b1b1;
+}
+
 body {
     margin: 0px;
 }
 
 header {
     width: 100%;
-    background-image: linear-gradient(180deg, #6e4973, #532259 60%);
+    background-image: linear-gradient(180deg, var(--roxo-claro), var(--roxo-escuro) 60%);
     padding-top: 6vh;
     padding-bottom: 6vh;
     margin: 0px;
@@ -28,8 +35,7 @@ h2 {
     margin: 0px;
     width: fit-content;
     padding: 5px;
-    background-color: rgb(177, 177, 177);
-    border: 3px solid grey;
+    background-color: var(--cinza-medio);
 
     font-size: 2em;
 }
