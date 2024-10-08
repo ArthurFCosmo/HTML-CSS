@@ -92,6 +92,7 @@ mark {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 
+    text-align: center;
     
     background-color: yellow
 }
@@ -99,6 +100,7 @@ mark {
 #botao-pag:hover {
     background-color: rgb(113, 113, 0);
     text-decoration: underline;
+    text-align: center;
     color: black;
 }
 
